@@ -24,7 +24,9 @@ async def on_message(message):
 
     if message.content.startswith(f'{PREFIX}hello'):
         await message.channel.send('Hello!')
-
+        
+    if message.content.startswith(f'{PREFIX}디스코드'):
+        await message.channel.send('정말 좋은 디스코드!!')
 
 try:
     client.run(TOKEN)
